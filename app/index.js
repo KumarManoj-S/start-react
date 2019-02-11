@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import App from './App';
-import configureStore, { history } from './store/configureStore';
+import configureStore from './store/configureStore';
 import JssProvider from 'react-jss/lib/JssProvider';
 import {
   MuiThemeProvider,
@@ -53,7 +53,7 @@ loadableReady(() => {
       <JssProvider generateClassName={generateClassName}>
         <MuiThemeProvider theme={theme}>
           <Provider store={store} >
-            <BrowserRouter history={history}>
+            <BrowserRouter>
               <Main />
             </BrowserRouter>
           </Provider >

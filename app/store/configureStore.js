@@ -3,9 +3,7 @@ import logger from 'redux-logger';
 import createSagaMiddleware, { END } from 'redux-saga';
 import reducers from '../reducers';
 import sagas from '../sagas';
-import historyObject from '../history';
 
-export const history = historyObject;
 const sagaMiddleware = createSagaMiddleware();
 const middlewares = [sagaMiddleware];
 
