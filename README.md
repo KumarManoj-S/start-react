@@ -1,6 +1,6 @@
-# Start React
+# Construct React
 
-Start React is a boilerplate for web development built on top of Express and React, containing modern web development tools such as [Webpack](https://webpack.js.org/) and [Babel](https://babeljs.io/). It will be the good starting point which suits for both professionals and new comers.
+Construct React is a boilerplate for web development built on top of Express and React, containing modern web development tools such as [Webpack](https://webpack.js.org/) and [Babel](https://babeljs.io/). It will be the good starting point which suits for both professionals and new comers.
 
 # Main Features!
 
@@ -18,16 +18,16 @@ Start React is a boilerplate for web development built on top of Express and Rea
 
 ### Installation
 
-Install the Start-React library
+Install the Construct-React library
 
 ```sh
- yarn global add start-react
+ yarn global add construct-react
 ```
 
-Create a new project with start-react
+Create a new project with construct-react
 
 ```sh
- start-react app-name
+ construct-react app-name
  cd app-name
 ```
 
