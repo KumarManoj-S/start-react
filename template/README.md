@@ -1,36 +1,3 @@
-# Start React
-
-Start React is a boilerplate for web development built on top of Express and React, containing modern web development tools such as [Webpack](https://webpack.js.org/) and [Babel](https://babeljs.io/). It will be the good starting point which suits for both professionals and new comers.
-
-# Main Features!
-
-  - Provides Server Side Rendering (SSR). Web application is being served by [Express](https://expressjs.com/) server
-  - Configures React router which provides the Routing functionality.
-  - Configures Code Splitting using [@loadable/component](https://www.smooth-code.com/open-source/loadable-components/).
-  - Configures [Material UI](https://material-ui.com/) which provides React Components that implement Google's Material design.
-  - Configures [styled-components](https://www.styled-components.com/). It allows you to write actual CSS code to style your components.
-  - Configures [React-redux](https://react-redux.js.org/). It lets your React components read data from a Redux store, and dispatch actions to the store to update data.
-  - Configures [Redux-saga](https://redux-saga.js.org/). It is a redux middleware library, that is designed to make handling side effects in your redux app nice and simple.
-  - Configures [axios](https://github.com/axios/axios). It is Promise based HTTP client for the browser and node.js.
-  - Configures [Enzyme](https://airbnb.io/enzyme/). It is a JavaScript Testing utility for React that makes it easier to assert, manipulate, and traverse your React Components' output.
-  - Configures [react-Helmet](https://github.com/nfl/react-helmet#readme).
-
-
-### Installation
-
-Install the Start-React library
-
-```sh
- yarn global add start-react
-```
-
-Create a new project with start-react
-
-```sh
- start-react app-name
- cd app-name
-```
-
 Install the dependencies and devDependencies.
 
 ```sh
