@@ -26,7 +26,6 @@ const extractor = new ChunkExtractor({ statsFile });
 
 const sheet = new ServerStyleSheet();
 const sheetsRegistry = new SheetsRegistry();
-const prodScripts = require('./prodScripts');
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -79,7 +78,6 @@ const handleRender = (req, res) => {
     }
 
     const helmet = Helmet.renderStatic();
-    const prodScriptsTags = process.env.NODE_ENV === 'production' ? prodScripts : '';
     res
       .send(
         renderFullPage(
@@ -88,7 +86,6 @@ const handleRender = (req, res) => {
           jsx,
           preloadedState,
           extractor.getScriptTags(),
-          prodScriptsTags
         )
       );
   });

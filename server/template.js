@@ -1,4 +1,4 @@
-const renderFullPage = (header, helmet, html, preloadedState, scripts, prodScripts) => {
+const renderFullPage = (header, helmet, html, preloadedState, scripts) => {
   return (`
     <!DOCTYPE html>
     <html ${helmet.htmlAttributes.toString()}>
@@ -63,7 +63,6 @@ const renderFullPage = (header, helmet, html, preloadedState, scripts, prodScrip
             }());
           }
         </script>
-        ${prodScripts}
       </body>
     </html>
   `
