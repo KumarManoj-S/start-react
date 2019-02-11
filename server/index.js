@@ -3,10 +3,10 @@ import webpack from 'webpack';
 import webpackDevMiddleware from 'webpack-dev-middleware';
 import webpackHotMiddleware from 'webpack-hot-middleware';
 import handleRender from './Renderer';
+import port from '../port';
 
 const config = require('../webpack.config.js');
 
-const port = 3000;
 const server = Express();
 const compiler = webpack(config);
 
