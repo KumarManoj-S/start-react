@@ -1,11 +1,18 @@
 import axios from 'axios';
 
+const isJson = (str) => {
+  try {
+    JSON.parse(str);
+  } catch (e) {
+    return false;
+  }
+  return true;
+};
 
 axios.interceptors.response.use((res) => {
-  const {data} = res;
-
-  if(data) { return JSON.parse(data); }
-  return {};
+  const { data } = res;
+  if (data && isJson(data)) { return JSON.parse(data); }
+  return data;
 }, (error) => {
   return Promise.reject(error.response ? JSON.parse(error.response.data) : error);
 });
@@ -28,7 +35,7 @@ const commonConfig = (link) => {
       // or `undefined`), the promise will be resolved; otherwise, the promise will be
       // rejected.
 
-      if(status === 403) {
+      if (status === 403) {
         // showErrorNotification({title: 'Access denied', message: 'You are forbidden from performing this operation'});
       }
       // TODO: Handle network connectivity and authorization failure related responses based on the status codes
@@ -42,7 +49,7 @@ export const fetchLink = (link, data) => {
   if (data) {
     config.data = data;
   }
-  if(link.responseType) {
+  if (link.responseType) {
     config.responseType = link.responseType;
   }
   return axios(config);

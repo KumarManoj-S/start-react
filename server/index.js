@@ -13,8 +13,6 @@ const compiler = webpack(config);
 if (process.env.NODE_ENV === 'development') {
   server.use(webpackDevMiddleware(compiler, {
     hot: true,
-    filename: 'bundle.js',
-    publicPath: 'dist/',
     stats: {
       colors: true,
     },

@@ -27,6 +27,9 @@ const extractor = new ChunkExtractor({ statsFile });
 const sheet = new ServerStyleSheet();
 const sheetsRegistry = new SheetsRegistry();
 const theme = createMuiTheme({
+  typography: {
+    useNextVariants: true,
+  },
   palette: {
     primary: {
       light: '#7986cb',

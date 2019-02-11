@@ -28,6 +28,9 @@ class Main extends React.Component {
 }
 
 const theme = createMuiTheme({
+  typography: {
+    useNextVariants: true,
+  },
   palette: {
     primary: {
       light: "#7986cb",
