@@ -1,0 +1,10 @@
+{
+    "verbose": false,
+    "watch": [
+        "app",
+        "server",
+        "server/index.jsx",
+        "webpack"
+    ],
+    "exec": "yarn babel-node -- dist/server"
+}

@@ -1,0 +1,68 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "forOf": true,
+      "jsx": true,
+      "es6": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "comma-dangle": 0,
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "react/prop-types": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-indent-props": 0,
+    "react/jsx-closing-bracket-location": 0,
+    "jsx-a11y/label-has-for": 0,
+    "object-curly-spacing": 0,
+    "arrow-body-style": 0,
+    "max-len": 0,
+    "prefer-template": 0,
+    "space-before-blocks": 0,
+    "keyword-spacing": 0,
+    "no-param-reassign": 0,
+    "import/prefer-default-export": 0,
+    "no-shadow": "error",
+    "no-console": "warn",
+    "no-unused-vars": "error",
+    "prefer-destructuring": [
+      "error",
+      {
+        "VariableDeclarator": {
+          "array": false,
+          "object": true
+        },
+        "AssignmentExpression": {
+          "array": false,
+          "object": false
+        }
+      }
+    ],
+    "no-trailing-spaces": [
+      "error",
+      {
+        "ignoreComments": true,
+        "skipBlankLines": true
+      }
+    ],
+    "plugins": [
+      "import"
+    ]
+  }
+}
