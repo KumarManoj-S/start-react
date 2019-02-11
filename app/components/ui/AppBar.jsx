@@ -44,6 +44,11 @@ function ButtonAppBar(props) {
             onClick={() => history.push('/features')}>
             Features
           </Button>
+          <Button
+            color="inherit"
+            onClick={() => history.push('/posts')}>
+            Posts
+          </Button>
         </Toolbar>
       </AppBar>
     </div>
