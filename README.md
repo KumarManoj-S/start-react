@@ -1,6 +1,6 @@
 # Start React
 
-Start React is a boilerplate for web development built on top of Express and React, containing modern web development tools such as [Webpack](https://webpack.js.org/) nad [Babel](https://babeljs.io/). It will be the good starting point which suits for both professionals and new comers.
+Start React is a boilerplate for web development built on top of Express and React, containing modern web development tools such as [Webpack](https://webpack.js.org/) and [Babel](https://babeljs.io/). It will be the good starting point which suits for both professionals and new comers.
 
 # Main Features!
 
