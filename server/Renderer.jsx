@@ -16,6 +16,7 @@ import App from '../app/App';
 import configureStore from '../app/store/configureStore';
 import renderFullPage from './template';
 import sagas from '../app/sagas';
+import theme from '../common/material-ui/Theme';
 
 const path = require('path');
 
@@ -26,25 +27,6 @@ const extractor = new ChunkExtractor({ statsFile });
 
 const sheet = new ServerStyleSheet();
 const sheetsRegistry = new SheetsRegistry();
-const theme = createMuiTheme({
-  typography: {
-    useNextVariants: true,
-  },
-  palette: {
-    primary: {
-      light: '#7986cb',
-      main: '#53a2dc',
-      dark: '#303f9f',
-      contrastText: '#fff',
-    },
-    secondary: {
-      light: '#ff4081',
-      main: '#f50057',
-      dark: '#c51162',
-      contrastText: '#fff',
-    },
-  }
-});
 
 const handleRender = (req, res) => {
   const sheetsManager = new Map();

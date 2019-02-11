@@ -6,12 +6,12 @@ import configureStore from './store/configureStore';
 import JssProvider from 'react-jss/lib/JssProvider';
 import {
   MuiThemeProvider,
-  createMuiTheme,
   createGenerateClassName,
 } from '@material-ui/core/styles';
 import { loadableReady } from '@loadable/component';
 import ErrorBoundary from './ErrorBoundary';
 import { BrowserRouter } from 'react-router-dom';
+import theme from '../common/material-ui/Theme';
 
 class Main extends React.Component {
   componentDidMount() {
@@ -20,6 +20,7 @@ class Main extends React.Component {
       jssStyles.parentNode.removeChild(jssStyles);
     }
   }
+  
   render() {
     return (
       <App />
@@ -27,25 +28,6 @@ class Main extends React.Component {
   }
 }
 
-const theme = createMuiTheme({
-  typography: {
-    useNextVariants: true,
-  },
-  palette: {
-    primary: {
-      light: "#7986cb",
-      main: "#53a2dc",
-      dark: "#303f9f",
-      contrastText: "#fff",
-    },
-    secondary: {
-      light: "#ff4081",
-      main: "#f50057",
-      dark: "#c51162",
-      contrastText: "#fff",
-    },
-  }
-});
 const generateClassName = createGenerateClassName();
 const initialState = window.REDUX_DATA;
 const store = configureStore(initialState);
