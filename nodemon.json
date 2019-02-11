@@ -6,5 +6,5 @@
         "server/index.jsx",
         "webpack"
     ],
-    "exec": "yarn babel-node -- dist/server"
+    "exec": "yarn babel-node dist/server"
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Main extends Component {
   componentDidMount() {
@@ -9,6 +10,9 @@ class Main extends Component {
     return (
       <div>
         Hello World!
+        <Link to="/about">About</Link>
+        <br />
+        <Link to="/features">Features</Link>
       </div>
     );
   }
