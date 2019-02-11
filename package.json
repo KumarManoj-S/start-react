@@ -8,6 +8,9 @@
     "react-starter-kit",
     "build-react"
   ],
+  "repository": "https://github.com/KumarManoj-S/start-react.git",
+  "author": "Manoj Kumar S <kumarmanoj1158@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "bluebird": "^3.5.3",
     "chalk": "^2.4.2",
