@@ -1,6 +1,13 @@
 {
   "name": "construct-react",
   "version": "1.0.0",
+  "keywords": [
+    "react",
+    "create-react",
+    "create-react-app",
+    "react-starter-kit",
+    "build-react"
+  ],
   "dependencies": {
     "bluebird": "^3.5.3",
     "chalk": "^2.4.2",
