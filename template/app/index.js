@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import App from './App';
-import configureStore from './store/configureStore';
 import JssProvider from 'react-jss/lib/JssProvider';
 import {
   MuiThemeProvider,
   createGenerateClassName,
 } from '@material-ui/core/styles';
+import { BrowserRouter } from 'react-router-dom';
 import { loadableReady } from '@loadable/component';
 import ErrorBoundary from './ErrorBoundary';
-import { BrowserRouter } from 'react-router-dom';
 import theme from '../common/material-ui/Theme';
+import App from './App';
+import configureStore from './store/configureStore';
 
 class Main extends React.Component {
   componentDidMount() {
@@ -24,7 +24,7 @@ class Main extends React.Component {
   render() {
     return (
       <App />
-    )
+    );
   }
 }
 
@@ -37,18 +37,17 @@ loadableReady(() => {
     <ErrorBoundary>
       <JssProvider generateClassName={generateClassName}>
         <MuiThemeProvider theme={theme}>
-          <Provider store={store} >
+          <Provider store={store}>
             <BrowserRouter>
               <Main />
             </BrowserRouter>
-          </Provider >
+          </Provider>
         </MuiThemeProvider>
       </JssProvider>
-    </ErrorBoundary>
-    ,
+    </ErrorBoundary>,
     document.getElementById('root')
   );
-})
+});
 
 if (module.hot) {
   module.hot.accept();

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Typography } from '@material-ui/core';
 
+// styled components
 const Wrapper = styled(Typography)`
   background-color: #efefef;
   font-size: 50px;

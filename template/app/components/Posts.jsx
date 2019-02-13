@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import PostCard from './ui/PostCard';
 
+// styled component
 const Wrapper = styled(Typography)`
   background-color: #efefef;
   font-size: 50px;
@@ -14,7 +15,12 @@ const Wrapper = styled(Typography)`
 `;
 
 class Posts extends Component {
+  // componentWillMount has been used because the data has to be loaded by server
+  // during the initial rendering.
+  // componentWillMount will be executed both in the server and the client
+  // but componentDidMount will be executed only in the client.
   componentWillMount() {
+    // Triggering get all posts action
     const { getAllPosts } = this.props;
     getAllPosts();
   }
@@ -59,7 +65,6 @@ class Posts extends Component {
             ))
           }
         </Grid>
-
       </div>
     );
   }
