@@ -1,8 +1,5 @@
 /webpack/**
 tests.webpack.js
-/api/promiseMiddleware.js
 
-/public/**
 /node_modules/**
-/app/serviceWorker.js
 /app/index.js

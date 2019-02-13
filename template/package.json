@@ -73,11 +73,6 @@
     "dev": "NODE_ENV=development yarn build:dev && nodemon",
     "prod": "NODE_ENV=production yarn build:prod && NODE_ENV=production yarn babel-node -- dist/server",
     "build:prod": "NODE_ENV=production yarn build --mode production",
-    "build:dev:bundleanalyzer": "yarn build:dev --env.addons=bundleanalyzer",
-    "build:prod:bundleanalyzer": "yarn build:prod --env.addons=bundleanalyzer",
-    "build:dev:watch": "yarn build:dev --watch",
-    "build:prod:watch": "yarn build:prod --watch",
-    "stat": "webpack --json > stats.json",
     "test": "jest --coverage",
     "update-snapshot": "jest --updateSnapshot",
     "lint": "eslint app --ext .js,.jsx"
