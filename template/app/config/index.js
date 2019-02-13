@@ -1,1 +1,1 @@
-//Replace with your own config files
+// Replace with your own config files

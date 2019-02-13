@@ -6,7 +6,6 @@ import { StaticRouter as Router } from 'react-router-dom';
 import { SheetsRegistry } from 'jss';
 import {
   MuiThemeProvider,
-  createMuiTheme,
   createGenerateClassName,
 } from '@material-ui/core/styles';
 import JssProvider from 'react-jss/lib/JssProvider';
