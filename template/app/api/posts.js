@@ -1,10 +1,10 @@
 import { fetchLink } from './helper';
 
 export const getAllPosts = () => {
-  const getUserInfoLink = {
+  const link = {
     href: 'https://jsonplaceholder.typicode.com/posts',
     method: 'GET'
   };
 
-  return fetchLink(getUserInfoLink);
+  return fetchLink(link);
 };
